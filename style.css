@@ -18,6 +18,7 @@
 body{
 	width: 100%;
 }
+/**/
 
 /* HEADER */
 
@@ -35,6 +36,7 @@ body{
 	height: 100%;
 	padding: 0 15px;
 	margin: 0 auto;
+	font-size: 0;
 }
 
 .ba-header__nav{
@@ -80,8 +82,8 @@ a{
 	font-size: 60px;
 	font-weight: 900;
 	width: 370px;
-	margin-top: 210px;
-	margin-bottom: 25px;
+	margin-top: 202px;
+	margin-bottom: 10px;
 }
 
 .ba-header__info{
@@ -105,20 +107,22 @@ a{
 	font-size: 20px;
 	font-weight: 300;
 	line-height: 1.35;
-	color: rgba(255, 255, 255, 0.5);
+	color: #FFF;
 	height: 55px;
 	padding: 2px 25px;
 	margin-top: 30px;
-	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .ba-header__button:hover{
-	color: #FFF;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .ba-header__button:active{
 	box-shadow: none;
 }
+
+/**/
 
 /* ABOUT US */
 
@@ -146,6 +150,7 @@ a{
 	font-weight: 700;
 	color: #FFF;
 	padding-bottom: 23px;
+	text-transform: capitalize;
 }
 
 .ba-section__info{
@@ -155,6 +160,10 @@ a{
 	padding-bottom: 18px;
 }
 
+.ba-section__info:last-child{
+	padding-bottom: 0;
+}
+
 .ba-container__about-bg{
 	background: url('img/about-bg.png') no-repeat;
 	height: 100%;
@@ -162,3 +171,422 @@ a{
 	-webkit-filter: drop-shadow(-20px 10px 25px rgba(0,0,0,0.3));
 	filter: drop-shadow(-20px 10px 25px rgba(0,0,0,0.3));
 }
+
+/**/
+
+/* OUR SERVICES */
+
+.ba-section__services{
+	background: #70bfff;
+}
+
+.ba-section__quality{
+	display: inline-block;
+	width: 50%;
+}
+
+.ba-container--padding{
+	padding: 180px 0 150px 115px;
+}
+
+.ba-section__quality-button{
+	display: inline-block;
+	text-align: center;
+	width: 400px;
+	height: 100px;
+	background: #fff;
+	margin: 10px 0;
+	font-size: 0;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ba-section__quality-button:hover{
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ba-section__quality-button:active{
+	box-shadow: none;
+}
+
+.ba-section__quality-button:first-child{
+	margin-top: 0;
+}
+
+.ba-section__quality-button:last-child{
+	margin-bottom: 0;
+}
+
+.ba-section__quality-items{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.35;
+	width: 300px;
+	padding: 5px;
+}
+
+.ba-section__quality-icons{
+	display: inline-block;
+	border-left: 1px solid #9d9d9d;
+	width: 100px;
+	height: 100%;
+}
+
+.ba-container__text--width{
+	width: 50%;
+	text-align: right;
+	z-index: 1;
+}
+
+.ba-container__services-bg{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	z-index: 0;
+}
+
+/**/
+
+/* GALLERY */
+
+.ba-section__gallery{
+	background: #ffe92f;
+	padding: 90px 0 120px;
+}
+
+.ba-container--align{
+	text-align: center;
+}
+
+.ba-gallery__text{
+	width: 600px;
+	text-align: center;
+	margin: 0 auto 40px;
+}
+
+.ba-section__title--dark,
+.ba-section__info--dark{
+	color: #262626;
+}
+
+.ba-grid__image{
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.ba-grid__image:hover{
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ba-section__button{
+	display: inline-block;
+	margin: 50px 0 0;
+	padding: 14px 43px;
+	text-align: center;
+	vertical-align: middle;
+	background: #5585a2;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ba-section__button:hover{
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ba-section__button:active{
+	box-shadow: none;
+}
+
+.ba-section__button-text{
+	display: table-cell;
+	color: #FFF;
+	font-size: 20px;
+	line-height: 1.35;
+	text-transform: uppercase;
+}
+
+/**/
+
+/* SUBSCRIBE */
+
+.ba-section__subscribe{
+	background: url('img/subscribe-bg.jpg');
+	background-size: cover;
+	padding: 140px 0 170px;
+}
+
+.ba-subscribe__text{
+	width: 570px;
+	text-align: left;
+}
+
+.ba-subscribe__title{
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.ba-subscribe__form{
+	padding-top: 35px;
+}
+
+.ba-subscribe-fieldemail{
+	width: 570px;
+	height: 55px;
+	border: 1px solid #262626;
+	padding: 15px;
+	font-size: 15px;
+	line-height: 1.35;
+	color: #262626;
+	vertical-align: middle;
+}
+
+.ba-subscribe__button{
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 14px 30px;
+	text-align: center;
+	vertical-align: middle;
+	background: #96b92c;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 20px;
+	line-height: 1.35;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	margin-left: 30px;
+}
+
+.ba-subscribe__button:hover{
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ba-subscribe__button:active{
+	box-shadow: none;
+}
+
+/**/
+
+/* BLOG */
+
+.ba-section__blog{
+	background: #b07cf7;
+	padding: 95px 0 120px;
+}
+
+.ba-blog__post{
+	display: inline-block;
+	position: relative;
+	font-size: 0;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ba-blog__post:hover{
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.ba-blog__post:active{
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0);
+}
+
+.ba-blog__post:first-child{
+	float: left;
+}
+
+.ba-blog__post:last-child{
+	float: right;
+}
+
+.ba-blog__post-hover{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0) 50%, rgba(0,0,0,0.8) 100%);
+}
+
+.ba-blog__post:hover .ba-blog__post-hover{
+	display: inline-block;
+}
+
+.ba-blog__post-date{
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	padding: 7px;
+	border-radius: 5px;
+	background-color: rgb(38, 38, 38, 0.5);
+	text-align: center;
+}
+
+.ba-blog__post-day{
+	color: #FFF;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 0.8;
+	padding-bottom: 5px;
+}
+
+.ba-blog__post-month{
+	color: #FFF;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.ba-blog__post-info{
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	text-align: left;
+}
+
+.ba-blog__post-title{
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #FFF;
+	padding-bottom: 10px;
+}
+
+.ba-blog__post-author{
+	font-size: 13px;
+	font-weight: 300;
+	color: #FFF;
+}
+
+.ba-section__button--red{
+	clear: both;
+	background: #f72b3b;
+}
+
+/**/
+
+/* CONTACT */
+
+.ba-section__contact{
+	background: url('img/contact-bg.jpg');
+	background-size: cover;
+	padding: 80px 0 120px;
+}
+
+.ba-section__info--width{
+	width: 370px;
+	margin: 0 auto;
+}
+
+.ba-contact__form{
+	display: inline-block;
+	font-size: 0;
+	width: 50%;
+}
+
+.ba-contact-fieldcontact{
+	width: 500px;
+	height: 50px;
+	outline-style: none;
+	border-left: 5px solid rgba(0, 0, 0, 0);
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	padding: 12px 20px;
+	margin-bottom: 15px;
+	background: rgba(0, 196, 196, .5);
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.65;
+	color: #fff;
+	vertical-align: middle;
+}
+
+.ba-contact-fieldcontact:focus{
+	border-left: 5px solid #355b82;
+	background: rgba(0, 196, 196, 1);
+}
+
+.ba-contact-fieldcontact--comment{
+	resize:none;
+	height: 250px;
+}
+
+.ba-subscribe__button--width{
+	width: 500px;
+	margin-left: 0;
+}
+
+.ba-contact__form ::-webkit-input-placeholder{color:#fff; font-weight: 300;}
+.ba-contact__form ::-moz-placeholder{color:#fff; font-weight: 300;}
+.ba-contact__form :-moz-placeholder{color:#fff; font-weight: 300;}
+.ba-contact__form :-ms-input-placeholder{color:#fff; font-weight: 300;}
+.ba-contact__form ::placeholder{color:#fff; font-weight: 300;}
+
+.ba-contact__contact-data{
+	display: inline-block;
+	font-size: 0;
+	width: 50%;
+	padding-left: 85px;
+	vertical-align: top;
+}
+
+.ba-contact__title{
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+.ba-contact__info{
+	font-size: 20px;
+	line-height: 1.25;
+	margin-bottom: 15px;
+}
+
+/**/
+
+/* FOOTER */
+
+footer{
+	background: #262626;
+	text-align: center;
+	padding: 26px 0;
+}
+
+.ba-footer__copyright{
+	display: inline-block;
+	width: 33%;
+	text-align: left;
+	font-size: 16px;
+	color: #b9b9b9;
+	vertical-align: middle;
+}
+
+.ba-footer__link{
+	display: inline-block;
+	width: 34%;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	font-weight: 400;
+	color: #b9b9b9;
+	vertical-align: middle;
+}
+
+.ba-footer__made{
+	display: inline-block;
+	width: 33%;
+	text-align: right;
+	font-size: 16px;
+	color: #b9b9b9;
+	vertical-align: middle;
+}
+
+.ba-footer__made--love{
+	color: #ff2b58;
+	font-weight: 700;
+}
+
+/**/
